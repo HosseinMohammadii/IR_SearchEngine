@@ -1,4 +1,5 @@
 import math
+import os
 import pickle
 import re
 import bisect
@@ -53,24 +54,43 @@ class Dictionary:
     doc_element_squares_dict = {}
     token_term_frequency_dict = {}
     stop_words = []
-    docs_num = 10
+    docs_num = 0
 
     docs_dir = 'sampleDoc/'
 
     main_all_tokens_num = 0
 
-    def __init__(self, docs_num: int, docs_dir: str = None, doc_ids: list = None, main_dict_dir: str = None,
+    def __init__(self, docs_dir: str = None, main_dict_dir: str = None,
                  stop_words_dir: str = None):
         self.docs_dir = docs_dir
-        self.doc_ids = doc_ids
         self.main_dict_dir = main_dict_dir
         self.stop_words_dir = stop_words_dir
         self.docs_num = self.docs_num
+        self.id2path = {}
+        self.path2id = {}
+        self.generate_file_paths()
+
+    def generate_file_paths(self):
+        doc_id = 1
+        for root, d_names, f_names in os.walk(self.docs_dir):
+            for f in f_names:
+                d = os.path.join(root, f)
+                self.id2path[doc_id] = d
+                self.path2id[d] = doc_id
+                doc_id += 1
+        self.docs_num = doc_id
+
+
+    def get_doc_path_by_id(self, doc_id):
+        return self.id2path.get(doc_id, 'Not included')
+
+    def get_doc_id_by_path(self, doc_path):
+        return self.path2id.get(doc_path, 'Not included')
 
     def make_dictionary(self):
         all_tokens_num = 0
-        for doc_id in self.doc_ids:
-            with open(self.docs_dir + str(doc_id) + '.txt', encoding='utf8') as f:
+        for doc_id in self.id2path.keys():
+            with open(self.id2path[doc_id], encoding='utf8') as f:
                 line = f.readline()
                 cnt = 1
                 position = 0
@@ -205,8 +225,8 @@ class Dictionary:
             return token_info.keys()
         return []
 
-    def get_token_champion_docs_ids(self, token):
-        return [freq.doc for freq in self.champion_dict.get(token, [])]
+    def get_token_champion_docs_ids(self, token, threshold=1):
+        return [freq.doc for freq in self.champion_dict.get(token, []) if freq.frequency >= threshold]
 
     def save_main_dict(self, save_dir, name):
         a_file = open(save_dir + '/' + name + '.pkl', "wb")
@@ -257,6 +277,8 @@ class Dictionary:
                         * self.calculate_idf(self.token_doc_frequency_dict[word])
 
                 self.tf_idf_dict[doc_id][word] = tfidf
+                # if tfidf < 0:
+                #     print('tf_idf is negative')
                 self.doc_element_squares_dict[doc_id] = self.doc_element_squares_dict.get(doc_id, 0) + tfidf ** 2
 
     def normalize_tf_idf(self):
@@ -266,10 +288,16 @@ class Dictionary:
                 self.tf_idf_dict[doc_id][word] /= doc_vector_size
 
     def calculate_tf(self, frequency):
-        return float(1) + math.log10(frequency)
+        tf = float(1) + math.log10(frequency)
+        if tf < 0:
+            print('tf is negative', frequency)
+        return tf
 
     def calculate_idf(self, frequency):
-        return math.log10(self.docs_num / frequency)
+        idf = math.log10(self.docs_num / frequency)
+        if idf <= 0:
+            print('idf is negative', self.docs_num / frequency)
+        return idf
 
     def fill_champion_dict(self, champion_list_size):
         for token, token_info in self.main_dict.items():
@@ -279,7 +307,9 @@ class Dictionary:
             l.reverse()
             self.champion_dict[token] = l[:champion_list_size]
 
-
+    def add_doc(self):
+        """to use just and only adding few docs"""
+        pass
 
 
 if __name__ == '__main__':

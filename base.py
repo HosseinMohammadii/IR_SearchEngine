@@ -1,17 +1,18 @@
 class Score:
 
-    def __init__(self, doc, score):
+    def __init__(self, doc, doc_path, score):
         self.doc = doc
         self.score = -1 * score
+        self.doc_path = doc_path
 
     def __lt__(self, other):
         return self.score < other.score
 
     def __str__(self):
-        return 'doc:{} with score:{}'.format(str(self.doc), str(-1 * self.score)[:7])
+        return 'Score object. doc:{} with score:{}'.format(str(self.doc_path), str(-1 * self.score)[:7])
 
     def __repr__(self):
-        return 'doc:{} with score:{}'.format(str(self.doc), str(-1 * self.score)[:7])
+        return 'Score object. doc:{} with score:{}'.format(str(self.doc_path), str(-1 * self.score)[:7])
 
 
 class Frequency:
