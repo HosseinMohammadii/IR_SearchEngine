@@ -2,12 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f0811003-78e7-4102-91a6-f44213643301" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cluster.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/collect.py" beforeDir="false" afterPath="$PROJECT_DIR$/collect.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/binary_query.py" beforeDir="false" afterPath="$PROJECT_DIR$/binary_query.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/query.py" beforeDir="false" afterPath="$PROJECT_DIR$/query.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sampleDoc/1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/t/1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sampleDoc/10.txt" beforeDir="false" afterPath="$PROJECT_DIR$/t/10.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sampleDoc/2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/t/2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sampleDoc/3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/t/3.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sampleDoc/4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/t/4.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sampleDoc/5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/t/5.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sampleDoc/6.txt" beforeDir="false" afterPath="$PROJECT_DIR$/t/6.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sampleDoc/7.txt" beforeDir="false" afterPath="$PROJECT_DIR$/t/7.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sampleDoc/8.txt" beforeDir="false" afterPath="$PROJECT_DIR$/t/8.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sampleDoc/9.txt" beforeDir="false" afterPath="$PROJECT_DIR$/t/9.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,15 +42,16 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../abroadin/code" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/t" />
+      <recent name="$PROJECT_DIR$/sampleDoc" />
       <recent name="$PROJECT_DIR$" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/sampleDoc" />
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -117,8 +125,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.query" />
-        <item itemvalue="Python.collect" />
         <item itemvalue="Python.binary_query" />
+        <item itemvalue="Python.collect" />
       </list>
     </recent_temporary>
   </component>
@@ -133,7 +141,10 @@
       <option name="presentableId" value="Default" />
       <updated>1609759487956</updated>
       <workItem from="1609759496123" duration="33801000" />
-      <workItem from="1612541846181" duration="14504000" />
+      <workItem from="1612541846181" duration="14774000" />
+      <workItem from="1612610831503" duration="1564000" />
+      <workItem from="1612642346549" duration="1851000" />
+      <workItem from="1612706029970" duration="604000" />
     </task>
     <servers />
   </component>
@@ -141,26 +152,26 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="498" y="21" key="FileChooserDialogImpl" timestamp="1609824720942">
+    <state x="498" y="21" key="FileChooserDialogImpl" timestamp="1612707244785">
       <screen x="38" y="21" width="1328" height="747" />
     </state>
-    <state x="498" y="21" key="FileChooserDialogImpl/38.21.1328.747@38.21.1328.747" timestamp="1609824720942" />
-    <state width="1286" height="218" key="GridCell.Tab.0.bottom" timestamp="1612558688644">
+    <state x="498" y="21" key="FileChooserDialogImpl/38.21.1328.747@38.21.1328.747" timestamp="1612707244785" />
+    <state width="1286" height="218" key="GridCell.Tab.0.bottom" timestamp="1612643486949">
       <screen x="38" y="21" width="1328" height="747" />
     </state>
-    <state width="1286" height="218" key="GridCell.Tab.0.bottom/38.21.1328.747@38.21.1328.747" timestamp="1612558688644" />
-    <state width="1286" height="218" key="GridCell.Tab.0.center" timestamp="1612558688641">
+    <state width="1286" height="218" key="GridCell.Tab.0.bottom/38.21.1328.747@38.21.1328.747" timestamp="1612643486949" />
+    <state width="1286" height="218" key="GridCell.Tab.0.center" timestamp="1612643486949">
       <screen x="38" y="21" width="1328" height="747" />
     </state>
-    <state width="1286" height="218" key="GridCell.Tab.0.center/38.21.1328.747@38.21.1328.747" timestamp="1612558688641" />
-    <state width="1286" height="218" key="GridCell.Tab.0.left" timestamp="1612558688640">
+    <state width="1286" height="218" key="GridCell.Tab.0.center/38.21.1328.747@38.21.1328.747" timestamp="1612643486949" />
+    <state width="1286" height="218" key="GridCell.Tab.0.left" timestamp="1612643486948">
       <screen x="38" y="21" width="1328" height="747" />
     </state>
-    <state width="1286" height="218" key="GridCell.Tab.0.left/38.21.1328.747@38.21.1328.747" timestamp="1612558688640" />
-    <state width="1286" height="218" key="GridCell.Tab.0.right" timestamp="1612558688643">
+    <state width="1286" height="218" key="GridCell.Tab.0.left/38.21.1328.747@38.21.1328.747" timestamp="1612643486948" />
+    <state width="1286" height="218" key="GridCell.Tab.0.right" timestamp="1612643486949">
       <screen x="38" y="21" width="1328" height="747" />
     </state>
-    <state width="1286" height="218" key="GridCell.Tab.0.right/38.21.1328.747@38.21.1328.747" timestamp="1612558688643" />
+    <state width="1286" height="218" key="GridCell.Tab.0.right/38.21.1328.747@38.21.1328.747" timestamp="1612643486949" />
     <state x="211" y="21" key="SettingsEditor" timestamp="1609777858397">
       <screen x="38" y="21" width="1328" height="747" />
     </state>
@@ -169,6 +180,10 @@
       <screen x="38" y="21" width="1328" height="747" />
     </state>
     <state x="117" y="96" width="1130" height="576" key="com.intellij.history.integration.ui.views.FileHistoryDialog/38.21.1328.747@38.21.1328.747" timestamp="1609803122546" />
+    <state x="390" y="209" key="com.intellij.ide.util.TipDialog" timestamp="1612706029986">
+      <screen x="38" y="21" width="1328" height="747" />
+    </state>
+    <state x="390" y="209" key="com.intellij.ide.util.TipDialog/38.21.1328.747@38.21.1328.747" timestamp="1612706029986" />
     <state x="378" y="133" width="647" height="496" key="find.popup" timestamp="1612556647296">
       <screen x="38" y="21" width="1328" height="747" />
     </state>
@@ -179,8 +194,8 @@
     <state x="432" y="278" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/38.21.1328.747@38.21.1328.747" timestamp="1609777640218" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/IR$binary_query.coverage" NAME="binary_query Coverage Results" MODIFIED="1609778842123" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/IR$query.coverage" NAME="query Coverage Results" MODIFIED="1612558654984" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/IR$binary_query.coverage" NAME="binary_query Coverage Results" MODIFIED="1612643045749" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/IR$query.coverage" NAME="query Coverage Results" MODIFIED="1612643486932" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/IR$code.coverage" NAME="collect Coverage Results" MODIFIED="1609800629541" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

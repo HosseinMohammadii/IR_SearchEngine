@@ -28,17 +28,19 @@ class Query:
 
 if __name__ == '__main__':
     # d = Dictionary()
-    d = Dictionary(10, 'sampleDoc/', [1,
-                                      2, 3, 4, 5, 6, 7, 8, 9,
-                                      ])
+    d = Dictionary('sampleDoc/',)
     d.make_dictionary()
     # d.load_main_dict()
     # d.load_frequency_dict()
     # d.load_frequency_dict()
     d.find_stop_words()
     d.remove_stop_words_from_dictionary()
-    d.fill_tf_idf_dict()
-    d.normalize_tf_idf()
+    # d.fill_tf_idf_dict()
+    # d.normalize_tf_idf()
     q = Query(d)
     # print(q.query(['ریال', 'دلار']))
-    print(q.process_query_text('دلار ریال'))
+    res = q.process_query_text(d, 'انجمن صنفی مرغداران')
+    print(res)
+
+    for doc in res:
+        print(d.get_doc_path_by_id(doc))

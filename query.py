@@ -167,7 +167,7 @@ if __name__ == '__main__':
     d.remove_stop_words_from_dictionary()
     d.fill_tf_idf_dict()
     d.normalize_tf_idf()
-    d.fill_champion_dict(10)
+    d.fill_champion_dict(5)
     # print(d.tf_idf_dict[4]['ریال'])
     q = Query()
     # print(q.query(['ریال', 'دلار']))
@@ -185,4 +185,7 @@ if __name__ == '__main__':
         cluster.find_center()
         clusters.append(cluster)
 
-    print(q.process_query_text(d, 'بیماری', 20, clusters))
+    search_text = 'دوره ویکتوریا شکست'
+
+    # print(q.process_query_text(d, search_text, 20))
+    print(q.process_query_text(d, search_text, 20, clusters))
